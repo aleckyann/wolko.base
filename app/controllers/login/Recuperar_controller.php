@@ -35,7 +35,7 @@ class Recuperar_controller extends CI_Controller {
             $this->Usuarios->update(array('usuario_senha'=>$nova_senha_db), $data);
             $this->mail->enviar($data['usuario_email'], 'Nova senha de acesso', '<b>Sua nova senha de acesso é:</b> '.$nova_senha_usuario);
             $this->session->set_flashdata('success', 'Sucesso, verifique seu email!');
-            redirect('recuperar');
+            redirect('login');
         }
     }
 

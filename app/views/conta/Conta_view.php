@@ -21,8 +21,8 @@
                 </div>
 
                 <div class="custom-control custom-checkbox mb-2" id="senhaAlterada">
-                    <input type="checkbox" class="custom-control-input" id="CheckSenha">
-                    <label class="custom-control-label" for="CheckSenha">Enviar um e-mail com nova senha.</label>
+                    <input type="checkbox" name="enviar_senha" class="custom-control-input" id="CheckSenha">
+                    <label class="custom-control-label" for="CheckSenha">Quero receber um e-mail com minha nova senha.</label>
                 </div>
 
                 <button type="submit" class="btn btn-primary">Atualizar conta</button>

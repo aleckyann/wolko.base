@@ -28,7 +28,7 @@
                         <div class="form-row">
                             <div class="col-md-12">
                                 <label for="Nome">Nome completo</label>
-                                <input class="form-control" name="nome" id="Nome" type="text" aria-describedby="nameHelp" placeholder="Nome completo" autocomplete="name" minlength=10 required>
+                                <input class="form-control" name="nome" id="Nome" type="text" aria-describedby="nameHelp" placeholder="Nome completo" autocomplete="name" minlength=10 required autofocus>
                             </div>
                         </div>
                     </div>

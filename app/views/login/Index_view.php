@@ -29,7 +29,7 @@
                     <?=$csrf_input?>
                     <div class="form-group">
                         <label for="email">Email de acesso</label>
-                        <input class="form-control" name="email" id="email" type="email" aria-describedby="emailHelp" placeholder="Email" autofocus required autocomplete="email" value="<?=get_cookie('email')?>">
+                        <input class="form-control" name="email" id="email" type="email" aria-describedby="emailHelp" placeholder="Email" autofocus required autocomplete="email" value="<?=get_cookie('email')?>" autofocus>
                     </div>
                     <div class="form-group">
                         <label for="senha">Senha de acesso</label>

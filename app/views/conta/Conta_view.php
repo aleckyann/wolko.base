@@ -26,6 +26,8 @@
                 </div>
 
                 <button type="submit" class="btn btn-primary">Atualizar conta</button>
+                <hr>
+                <span class="small text-muted"><b>Ultima atualização:</b> <?= $this->times->db_para_ui($this->session->updated_at) ?></span>
             </form>
 
         </div>

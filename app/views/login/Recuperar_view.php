@@ -31,7 +31,7 @@
                     <?=$csrf_input?>
                     <div class="form-group">
                         <label for="Email">Email de acesso:</label>
-                        <input class="form-control text-center" id="Email" name="email" type="email" aria-describedby="emailHelp" placeholder="Email de acesso" required autocomplete="email" value="<?= get_cookie('email')?>">
+                        <input class="form-control text-center" id="Email" name="email" type="email" aria-describedby="emailHelp" placeholder="Email de acesso" required autocomplete="email" value="<?= get_cookie('email')?>" autofocus>
                     </div>
                     <button type="submit" class="btn btn-dark btn-block">Resetar senha de acesso</button>
                 </form>

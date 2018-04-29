@@ -1,16 +1,16 @@
 <?php
 
-class Datetime {
+class Times {
 
     /**
     * 0000-00-00 00:00:00 -> 00/00/0000 00:00:00
     **/
     public function db_para_ui($datetime_db)
     {
-        $datetime_db = explode(' ', $data);
+        $datetime_db = explode(' ', $datetime_db);
         $horas = $datetime_db[1];
         $datetime_db = explode("-", $datetime_db[0]);
-        $datetime_db = $data[2]. '/' .$datetime_db[1]. '/' .$datetime_db[0] .' '. $horas;
+        $datetime_db = $datetime_db[2]. '/' .$datetime_db[1]. '/' .$datetime_db[0] .' '. $horas;
         return $datetime_db;
     }
 

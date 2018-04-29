@@ -31,9 +31,9 @@ class Sistema_Controller extends CI_Controller
         $data['csrf_input'] = "<input type='hidden' name='".$this->security->get_csrf_token_name()."' value='".$this->security->get_csrf_hash()."'>";
         $data['title']      = "WOLKO™ - " . ucfirst($this->uri->segment(1)) . " : " . date('d/m/Y H:i:s');
 
-        $this->load->view('includes/Header_view', $data);
+        $this->load->view('includes/admin/Header_view', $data);
         $this->load->view($view, $data);
-        $this->load->view('includes/Footer_view');
+        $this->load->view('includes/admin/Footer_view');
     }
 
 

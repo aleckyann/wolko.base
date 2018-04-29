@@ -1,6 +1,7 @@
 # wolko.base
 Base para iniciar projetos básicos utilizando codeigniter 3.1.8 ou superior.
 
+* Estrutura slim utilizando Bootstrap 4.1; Jquery 3.2.1; livre de utilização de código pago/pirata;
 
 Ui
 ---

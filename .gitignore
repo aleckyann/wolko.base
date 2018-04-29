@@ -1,0 +1,5 @@
+app/logs/*
+DATABASE/[^.]*
+!DATABASE/default.sql
+composer.json
+composer.lock

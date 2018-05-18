@@ -19,3 +19,5 @@ class Password {
         return password_verify($password_input, $password_database);
     }
 }
+
+?>

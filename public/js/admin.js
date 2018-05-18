@@ -1,9 +1,8 @@
 (function($) {
-  "use strict"; // Start of use strict
-  // Configure tooltips for collapsed side navigation
+  // COnfigura tooltips para navegação collapsed side
   $('.navbar-sidenav [data-toggle="tooltip"]').tooltip({
     template: '<div class="tooltip navbar-sidenav-tooltip" role="tooltip" style="pointer-events: none;"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
-  })
+});
   // Toggle the side navigation
   $("#sidenavToggler").click(function(e) {
     e.preventDefault();
@@ -23,7 +22,8 @@
     this.scrollTop += (delta < 0 ? 1 : -1) * 30;
     e.preventDefault();
   });
-  // Scroll to top button appear
+
+  // Botão ScrollTop
   $(document).scroll(function() {
     var scrollDistance = $(this).scrollTop();
     if (scrollDistance > 100) {
@@ -32,14 +32,7 @@
       $('.scroll-to-top').fadeOut();
     }
   });
-  // Configure tooltips globally
-  $('[data-toggle="tooltip"]').tooltip()
-  // Smooth scrolling using jQuery easing
-  $(document).on('click', 'a.scroll-to-top', function(event) {
-    var $anchor = $(this);
-    $('html, body').stop().animate({
-      scrollTop: ($($anchor.attr('href')).offset().top)
-    }, 1000, 'easeInOutExpo');
-    event.preventDefault();
-  });
+
+  // Inicializar tooltips
+  $('[data-toggle="tooltip"]').tooltip();
 })(jQuery); // End of use strict

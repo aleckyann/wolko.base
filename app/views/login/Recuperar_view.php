@@ -12,7 +12,7 @@
     <!-- Bootstrap core CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- CSS para todas as páginas-->
-    <link href="<?= base_url('public') ?>/css/sb-admin.css" rel="stylesheet">
+    <link href="<?= base_url('public') ?>/css/admin.css" rel="stylesheet">
     <!-- Fontawesome 4.7.0-->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>

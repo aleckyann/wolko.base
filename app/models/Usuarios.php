@@ -3,34 +3,42 @@
 class Usuarios extends CI_model
 {
 
+    private $tabela = 'usuarios';
+
+    // Busca todos os usuários
     public function getAll()
     {
-        return $this->db->get('usuarios')->result_array();
+        $this->db->cache_on();
+        return $this->db->get($this->tabela)->result();
     }
 
-    public function getBy($data)
+    // Busca usuário por $where
+    public function getBy($where)
     {
-        return @$this->db->get_where('usuarios', $data)->result_array()[0];
+        $this->db->cache_on();
+        return $this->db->get_where($this->tabela, $where)->row_array();
     }
 
+    // Insere um usuário
     public function insert($data)
     {
-        if($this->db->insert('usuarios', $data)) {
-            return $this->db->get_where('usuarios', array('usuario_id' => $this->db->insert_id()))->result_array()[0];
+        if($this->db->insert($this->tabela, $data)) {
+            return $this->db->get_where($this->tabela, array('usuario_id' => $this->db->insert_id()))->row_array();
         } else {
             return FALSE;
         }
     }
 
+    // Atualiza um usuário
     public function update($data, $where)
     {
-        return $this->db->update('usuarios', $data, $where);
+        return $this->db->update($this->tabela, $data, $where);
     }
 
-    public function delete($data)
+    // remove um usuário
+    public function delete($where)
     {
-        return $this->db->get_where('usuarios', array('usuario_email' => $dados['usuario_email']))->result_array()[0];
+        return $this->db->delete($this->tabela, $where);
     }
-
 
 }

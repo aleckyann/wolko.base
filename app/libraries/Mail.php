@@ -20,6 +20,7 @@ class Mail
     public function enviar($destinatario, $assunto, $mensagem, $anexo = '')
     {
         $this->CI->load->library('email');
+        $this->CI->email->clear();
         $this->CI->email->from('bot@wolko.com.br');//ALTERE CONFORME NECESSÁRIO
         $this->CI->email->to($destinatario);
         $this->CI->email->subject($assunto);
